@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Motors - Next Generation Driving</title>
+    <link rel="stylesheet" href="car.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-car text-white text-3xl mr-2"></i>
+                    <span class="text-white font-bold text-xl">Velocity Motors</span>
+                </div>
+                
+                <div class="desktop-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#specs" class="nav-link">Specifications</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="mobile-menu-button">
+                    <button id="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#features" class="mobile-nav-link">Features</a>
+                <a href="#specs" class="mobile-nav-link">Specifications</a>
+                <a href="#gallery" class="mobile-nav-link">Gallery</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Experience the <span class="text-blue-400">Future</span> of Driving</h1>
+                    <p>The all-new Velocity V12 combines cutting-edge technology with unparalleled performance for the ultimate driving experience.</p>
+                    
+                    <div class="hero-buttons">
+                        <button class="primary-btn">Book a Test Drive</button>
+                        <button class="secondary-btn">Explore Models</button>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <i class="fas fa-tachometer-alt text-blue-400 text-2xl mr-2"></i>
+                            <div>
+                                <p class="stat-label">Top Speed</p>
+                                <p class="stat-value">320 km/h</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-bolt text-blue-400 text-2xl mr-2"></i>
+                            <div>
+                                <p class="stat-label">Horsepower</p>
+                                <p class="stat-value">720 HP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Innovative <span class="text-blue-600">Features</span></h2>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microchip text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3>AI-Powered Driving</h3>
+                    <p>Advanced machine learning algorithms adapt to your driving style for enhanced safety and comfort.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-battery-three-quarters text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3>Extended Range</h3>
+                    <p>Our breakthrough battery technology delivers up to 500 miles on a single charge.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fan text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3>Aerodynamic Design</h3>
+                    <p>Wind-tunnel perfected shape reduces drag by 20% for improved efficiency and performance.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wheelchair text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3>Autonomous Parking</h3>
+                    <p>Simply exit your car and let it park itself, even in tight spaces.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3>Smart Interior</h3>
+                    <p>Mood-sensing lighting and adaptive seating create the perfect driving environment.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3>Advanced Safety</h3>
+                    <p>360-degree collision avoidance system with automatic emergency braking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Specifications Section -->
+    <section id="specs" class="specs">
+        <div class="container">
+            <h2>Technical <span class="text-blue-600">Specifications</span></h2>
+            
+            <div class="specs-table-container">
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>V12 Standard</th>
+                            <th>V12 Performance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Engine</td>
+                            <td>Dual Motor AWD</td>
+                            <td>Tri-Motor AWD</td>
+                        </tr>
+                        <tr>
+                            <td>Acceleration (0-100 km/h)</td>
+                            <td>3.2 seconds</td>
+                            <td>2.1 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Top Speed</td>
+                            <td>250 km/h</td>
+                            <td>320 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Range</td>
+                            <td>450 km</td>
+                            <td>380 km</td>
+                        </tr>
+                        <tr>
+                            <td>Charging Time (10-80%)</td>
+                            <td>22 minutes</td>
+                            <td>25 minutes</td>
+                        </tr>
+                        <tr>
+                            <td>Cargo Space</td>
+                            <td>800 L</td>
+                            <td>750 L</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="specs-button">
+                <button class="primary-btn">Download Full Spec Sheet</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Visual <span class="text-blue-600">Gallery</span></h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1283&q=80" 
+                         alt="Exterior" 
+                         class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551830820-330a71b99659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Interior" 
+                         class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" 
+                         alt="Dashboard" 
+                         class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80" 
+                         alt="Headlights" 
+                         class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Side View" 
+                         class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555215695-24d958e606b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80" 
+                         alt="Wheels" 
+                         class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in <span class="text-blue-600">Touch</span></h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Fill out the form or reach out to us directly to schedule a test drive or ask any questions about the Velocity V12.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4>Showroom Address</h4>
+                                <p>123 Velocity Avenue, Motor City, MC 90210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4>Sales Team</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>sales@velocitymotors.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Vehicle Interest</label>
+                            <select id="interest">
+                                <option>Velocity V12 Standard</option>
+                                <option>Velocity V12 Performance</option>
+                                <option>Other Models</option>
+                                <option>General Information</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <i class="fas fa-car text-blue-400 text-3xl mr-2"></i>
+                        <span class="text-2xl font-bold">Velocity Motors</span>
+                    </div>
+                    <p class="brand-description">Redefining the future of mobility with cutting-edge technology and sustainable performance.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#specs">Specifications</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2023 Velocity Motors. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
